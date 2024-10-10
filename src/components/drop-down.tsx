@@ -58,7 +58,7 @@ const FlyoutLink = ({ children, FlyoutContent, className }: any) => {
       {children}
 
       {showFlyout && (
-        <div className="fixed left-0 right-0  bg-red-300 text-black w-screen">
+        <div className="fixed left-0 right-0  bg-red-300 text-black w-screen z-10">
           <div className="absolute -top-6 left-0 right-0 h-6 bg-transparent" />
           <FlyoutContent />
         </div>
