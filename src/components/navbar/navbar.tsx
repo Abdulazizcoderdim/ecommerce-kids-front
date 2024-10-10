@@ -1,12 +1,13 @@
 import { Search } from 'lucide-react';
 import { AiOutlineMessage } from 'react-icons/ai';
 import { CiLocationOn } from 'react-icons/ci';
-import { FaCaretDown, FaInstagram, FaTelegram } from 'react-icons/fa';
+import { FaInstagram, FaTelegram } from 'react-icons/fa';
 import { FaVk } from 'react-icons/fa6';
 import { IoIosHeartEmpty, IoLogoYoutube } from 'react-icons/io';
 import { RxPerson } from 'react-icons/rx';
 import { SlHandbag } from 'react-icons/sl';
 import { Link } from 'react-router-dom';
+import DropDown from '../drop-down';
 import MaxWidth from '../max-width';
 import { Button } from '../ui/button';
 
@@ -81,26 +82,7 @@ const Navbar = () => {
         </div>
       </MaxWidth>
       <div className="flex items-center justify-center py-2">
-        <ul className="flex items-center gap-5">
-          <li className="font-bold text-base flex items-center cursor-pointer">
-            Мальчики <FaCaretDown className="w-3 h-3 mt-1" />
-          </li>
-          <li className="font-bold text-base flex items-center cursor-pointer">
-            Девочки <FaCaretDown className="w-3 h-3 mt-1" />
-          </li>
-          <li className="font-bold text-base flex items-center cursor-pointer">
-            Сезоны <FaCaretDown className="w-3 h-3 mt-1" />
-          </li>
-          <li className="font-bold text-base flex items-center cursor-pointer">
-            Бренды <FaCaretDown className="w-3 h-3 mt-1" />
-          </li>
-          <li className="font-bold text-base flex items-center cursor-pointer">
-            Доставка
-          </li>
-          <li className="font-bold text-base flex items-center cursor-pointer">
-            Помощь <FaCaretDown className="w-3 h-3 mt-1" />
-          </li>
-        </ul>
+        <DropDown />
       </div>
     </header>
   );
